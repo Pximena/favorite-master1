@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context="com.i044114_i012114.proyectofinalandroid.Views.LoginUserActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:padding="20dp"
+        >
+
+        <TextView
+            android:id="@+id/id_tv_iu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Digite Cedula:"
+            android:textSize="15sp"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="10dp"
+            />
+
+    <EditText
+        android:id="@+id/id_et_users"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_tv_iu"
+        android:inputType="number"
+        />
+
+        <TextView
+            android:id="@+id/id_tv_ic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Digite Contraseña:"
+            android:textSize="15sp"
+            android:textColor="@android:color/black"
+            android:layout_below="@+id/id_et_users"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            />
+
+    <EditText
+        android:id="@+id/id_et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_tv_ic"
+        android:inputType="textPassword"
+
+        />
+
+        <CheckBox
+            android:id="@+id/opcion_mostrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/id_et_users"
+            android:layout_alignRight="@id/id_et_password"
+            android:onClick="mostrarContraseña"
+            android:button="@drawable/checkbox_status"
+            android:layout_marginTop="30dp"
+             />
+
+        <Button
+            android:id="@+id/id_btn_ingresar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="INGRESAR"
+            android:theme="@style/RaisedButtonDark"
+            android:layout_below="@id/id_et_password"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:onClick="userVali"
+            />
+
+    </RelativeLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

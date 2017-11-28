@@ -1,0 +1,24 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="RaisedButtonDark">
+        <item name="colorButtonNormal">#18ffff</item>
+        <item name="colorControlHighlight">#29B6F6</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="EditTextWhite">
+        <item name="android:textColorHint">#000000</item>
+        <item name="android:textSize">20dp</item>
+        <item name="colorControlNormal">#000000</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+    </style>
+
+</resources>
